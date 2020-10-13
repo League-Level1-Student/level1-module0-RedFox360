@@ -42,7 +42,7 @@ public class BodyPartQuiz {
 
 		// 3. Change the size of the window so that you can only see part of the
 		// image.
-		window.setSize(500, 500);
+		window.setSize(100, 100);
 
 		showNextImage();
 
@@ -50,22 +50,52 @@ public class BodyPartQuiz {
 
 	private void startQuiz() {
 
-		// 1. Make an int variable to hold the score.
-
-		// 2. Set the size of the window in the initializeGui() method 
-
-		// 4. Ask the user who this person is and store their answer
+		int score = 0;
 		String guess = JOptionPane.showInputDialog("who is this?");
 
-		// 5. Check their answer. If they guessed correctly:
-		// -- Tell them they are right and increase the score by 1
-
-		// 6. Otherwise:
-		// -- Tell them they are wrong and who the person is
-
-		// 7. Use the showNextImage() method below to get the next image
+		if (guess.equalsIgnoreCase("arnold schwarzenegger")) {
+			System.out.println("You're correct!");
+			score += 1;
+		} else {
+			System.out.println("You are incorrect. The correct answer is Arnold Schwarzenegger");
+		}
+		System.out.println("Your current score is " + score + ".");
 		showNextImage();
+		guess = JOptionPane.showInputDialog("who is this?");
 
+		if (guess.equalsIgnoreCase("leonardo Dicaprio")) {
+			System.out.println("You're correct!");
+			score += 1;
+		} else {
+			System.out.println("You are incorrect. The correct answer is Leonardo Dicaprio");
+		}
+		System.out.println("Your current score is " + score + ".");
+		showNextImage();
+		guess = JOptionPane.showInputDialog("who is this?");
+
+		if (guess.equalsIgnoreCase("morgan freeman")) {
+			System.out.println("You're correct!");
+			score += 1;
+		} else {
+			System.out.println("You are incorrect. The correct answer is Morgan Freeman");
+		}
+		System.out.println("Your current score is " + score + ".");
+		showNextImage();
+		guess = JOptionPane.showInputDialog("who is this?");
+
+		if (guess.equalsIgnoreCase("Jack Black")) {
+			System.out.println("You're correct!");
+			score += 1;
+		} else {
+			System.out.println("You are incorrect. The correct answer is Jack Black");
+		}
+		System.out.println("Your current score is " + score + ".");
+		showNextImage();
+		 
+		 
+		
+		
+		
 		// 8. .... repeat 4-7 for all your images.....
 
 		// 9. Show them their current score
